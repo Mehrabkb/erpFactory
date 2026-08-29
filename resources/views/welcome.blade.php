@@ -273,5 +273,16 @@
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
+
+
+
+        <div x-data="{open:false}">
+            <button @click="open = !open">
+                open / close
+            </button>
+            <div x-show="open">
+                alpin
+            </div>
+        </div>
     </body>
 </html>
